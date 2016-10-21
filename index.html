@@ -1,1 +1,124 @@
-Hello World
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+      <!-- Dropdowns Structure -->
+      <ul id="desdd" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+
+
+      <ul id="slide-out" class="side-nav">
+        <li><div class="userView">
+          <img class="background" src="http://www.elementaryos-fr.org/wp-content/uploads/2013/09/wallpaper-744402.jpg">
+          <a href="#!user"><img class="circle" src="http://www.elementaryos-fr.org/wp-content/uploads/2013/09/wallpaper-744402.jpg"></a>
+          <a href="#!name"><span class="white-text name">Jason Anx</span></a>
+          <a href="#!email"><span class="white-text email">jasonantxia@gmail.com</span></a>
+        </div></li>
+
+        <li><a href=""><i class="material-icons"></i>Home</a></li>
+        <li><a href=""><i class="material-icons">info</i>About</a></li>
+        <li><a href="tg://resolve?domain=JasonAnx"><i class="material-icons">message</i>Telegram</a></li>
+        <li> <!-- Dropdown --> <a class="dropdown-button" href="" data-activates="desdd">
+          Download <i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+
+        <li><div class="divider"></div></li>
+
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
+
+      <!-- ----------------------------------------------------------------------------------- 
+        NAV BAR 
+      -----------------------------------------------------------------------------------  -->  
+      <div class="navbar-fixed">
+        <nav> 
+          <div class="nav-wrapper content">
+            <a href="#!" class="brand-logo center">JANX</a>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            
+            
+            <!-- Desktop -->
+            <ul class="left hide-on-med-and-down">
+              <li><a href="#" data-activates="slide-out" class="anxmenu"><i class="material-icons">menu</i></a></li>
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+
+      <!-- ----------------------------------------------------------------------------------- 
+        Content 
+      -----------------------------------------------------------------------------------  --> 
+
+      <div class="section white">
+        
+        <div class="row container">
+
+          <h2 class="header">Twas brillig...</h2>
+          <div class="flow-text text-lighten-3  ">
+            Twas brillig, and the slithy toves
+              Did gyre and gimble in the wabe:
+            All mimsy were the borogoves,
+              And the mome raths outgrabe.
+            
+            Beware the Jabberwock, my son!
+              The jaws that bite, the claws that catch!
+            Beware the Jubjub bird, and shun
+              The frumious Bandersnatch!"
+            He took his vorpal sword in hand:
+              Long time the manxome foe he sought --
+            So rested he by the Tumtum tree,
+              And stood awhile in thought.
+            And, as in uffish thought he stood,
+              The Jabberwock, with eyes of flame,
+            Came whiffling through the tulgey wood,
+              And burbled as it came!
+            One, two! One, two! And through and through
+              The vorpal blade went snicker-snack!
+            He left it dead, and with its head
+              He went galumphing back.
+            And, has thou slain the Jabberwock?
+              Come to my arms, my beamish boy!
+            O frabjous day! Callooh! Callay!'
+              He chortled in his joy.
+            
+            Twas brillig, and the slithy toves
+              Did gyre and gimble in the wabe;
+            All mimsy were the borogoves,
+              And the mome raths outgrabe.
+          </div>
+
+        </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="http://2.bp.blogspot.com/-t4objAicEOY/VdbiPImbshI/AAAAAAAACLI/aq5jYJY-oaU/s1600/Nyarlathotep1.jpg"></div>
+      </div>
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" >
+        $( document ).ready(function(){
+          $(".anxmenu").sideNav();
+          $(".button-collapse").sideNav();
+          $('.parallax').parallax();
+        })
+      </script>
+    </body>
+  </html>
