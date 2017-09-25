@@ -8,6 +8,14 @@ h1, h2, h3, h4, h4, h6 {
     text-shadow: 4px 3px 13px rgba(60, 60, 60, 1);
 }
 
+.title {
+    margin-top: 64px;
+}
+
+.pinned {
+    top: 100px;
+}
+
 body {
     /* overflow: hidden */
 }
@@ -36,8 +44,21 @@ p {
 .carousel .indicators .indicator-item {
     height: 1.5rem;
     width: 1.5rem;
+    filter: drop-shadow(2px 2px 2px black);
 }
 
 .indicator-item.active {
     opacity: .5;
 }
+
+.parallax-container {
+    margin-top: -64px;
+  }
+
+  nav {
+      opacity: .65;
+  }
+
+  .blurred {
+      filter: blur(.5em)
+  }
