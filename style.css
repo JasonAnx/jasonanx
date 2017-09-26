@@ -52,13 +52,45 @@ p {
 }
 
 .parallax-container {
-    margin-top: -64px;
-  }
+    height: 564px;
+}
 
-  nav {
-      opacity: .65;
-  }
+nav {
+    opacity: .65;
+}
 
-  .blurred {
-      filter: blur(.5em)
-  }
+/* Blurred Header ***************************************************************** */
+
+.blurred {
+    filter: blur(.5em);
+    background: white;    
+}
+
+body > div.navbar-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    z-index: 99;
+    box-shadow: 0 0 .125em 0 rgba(0, 0, 0, .5);
+    overflow: hidden;
+    max-height: 64px;
+}
+
+body > div.navbar-fixed::after {
+    background: rgba(white, .5);
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+
+body > div.navbar-fixed > nav {
+    z-index: 999;
+}
+/* Header ***************************************************************** */

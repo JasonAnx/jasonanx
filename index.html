@@ -248,10 +248,26 @@
 
 
                 $('.toc-wrapper').pushpin({
-                    top: 600,
+                    top: 664,
                     // bottom: 0,
                     offset: 100
                 });
+
+                var content = $('.body-content'),
+                    header = $('body > div.navbar-fixed ');
+
+                $(content).clone().appendTo(header).addClass('blurred');
+
+                $(document).scroll(function () {
+                    var scroll = $(this).scrollTop();
+                    $('.blurred').css({
+                        '-webkit-transform': 'translateY(-' + scroll + 'px)',
+                        '-moz-transform': 'translateY(-' + scroll + 'px)',
+                        '-mz-transform': 'translateY(-' + scroll + 'px)',
+                        '-0-transform': 'translateY(-' + scroll + 'px)',
+                        'transform': 'translateY(-' + scroll + 'px)'
+                    });
+                })
             })
         </script>
     </body>
