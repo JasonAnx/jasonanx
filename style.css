@@ -37,18 +37,22 @@ p {
     filter: contrast(.9);
 }
 
-.carousel {
+
+/* .carousel {
     min-height: 400px;
-}
+} */
 
 .carousel .indicators .indicator-item {
     height: 1.5rem;
     width: 1.5rem;
-    filter: drop-shadow(2px 2px 2px black);
+    opacity: .8;
+    /* filter: drop-shadow(2px 2px 2px black); */
+    box-shadow: 0px 0px 8px black;
 }
 
-.indicator-item.active {
-    opacity: .5;
+.carousel .indicators .indicator-item.active {
+    background: black !important;
+    opacity: 1;
 }
 
 .parallax-container {
@@ -60,7 +64,9 @@ nav {
     opacity: .85;
 }
 
+
 /* Blurred Header ***************************************************************** */
+
 
 /* .blurred {
     filter: blur(.5em);
@@ -94,4 +100,6 @@ body > div.navbar-fixed::after {
 body > div.navbar-fixed > nav {
     z-index: 999;
 } */
+
+
 /* Header ***************************************************************** */
