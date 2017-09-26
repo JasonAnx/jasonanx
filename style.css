@@ -52,16 +52,17 @@ p {
 }
 
 .parallax-container {
+    margin-top: -64px;
     height: 564px;
 }
 
 nav {
-    opacity: .65;
+    opacity: .85;
 }
 
 /* Blurred Header ***************************************************************** */
 
-.blurred {
+/* .blurred {
     filter: blur(.5em);
     background: white;    
 }
@@ -92,5 +93,5 @@ body > div.navbar-fixed::after {
 
 body > div.navbar-fixed > nav {
     z-index: 999;
-}
+} */
 /* Header ***************************************************************** */
