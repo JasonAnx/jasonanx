@@ -1,226 +1,308 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <link rel="stylesheet" href="style.css">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
 
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-    <body>
+<body id="doc">
 
-        <!-- Dropdowns Structure -->
-        <ul id="desdd" class="dropdown-content">
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">three</a></li>
-        </ul>
+    <!-- Dropdowns Structure -->
+    <ul id="desdd" class="dropdown-content">
+        <li>
+            <a href="#!">one</a>
+        </li>
+        <li>
+            <a href="#!">two</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href="#!">three</a>
+        </li>
+    </ul>
 
 
-        <ul id="slide-out" class="side-nav grey darken-3">
-            <li>
-                <div class="userView">
-                    <!-- <img class="background" src="http://www.elementaryos-fr.org/wp-content/uploads/2013/09/wallpaper-744402.jpg"> -->
-                    <a href="#!user"><img class="circle" src="http://www.elementaryos-fr.org/wp-content/uploads/2013/09/wallpaper-744402.jpg"></a>
-                    <a href="#!name"><span class="white-text name">Jason Anx</span></a>
-                    <a href="#!email"><span class="white-text email">jasonantxia@gmail.com</span></a>
-                </div>
-            </li>
+    <ul id="slide-out" class="side-nav white darken-3">
+        <li>
+            <div class="userView">
+                <!-- <img class="background" src="http://www.elementaryos-fr.org/wp-content/uploads/2013/09/wallpaper-744402.jpg"> -->
+                <a href="#!user">
+                    <img class="circle" src="http://www.elementaryos-fr.org/wp-content/uploads/2013/09/wallpaper-744402.jpg">
+                </a>
+                <a href="#!name">
+                    <span class=" name">Jason Anchia</span>
+                </a>
+                <a href="#!email">
+                    <span class=" email">jasonantxia@gmail.com</span>
+                </a>
+            </div>
+        </li>
 
-            <li><a href=""><i class="material-icons"></i>Home</a></li>
-            <li><a href=""><i class="material-icons">info</i>About</a></li>
-            <li><a href="tg://resolve?domain=JasonAnx"><i class="material-icons">message</i>Telegram</a></li>
-            <li>
-                <!-- Dropdown --><a class="dropdown-button" href="" data-activates="desdd">
-          Download <i class="material-icons right">arrow_drop_down</i></a>
-            </li>
+        <li>
+            <a href="">
+                <i class="material-icons"></i>Home</a>
+        </li>
+        <li>
+            <a href="">
+                <i class="material-icons">info</i>About</a>
+        </li>
+        <li>
+            <a href="tg://resolve?domain=JasonAnx">
+                <i class="material-icons">message</i>Telegram</a>
+        </li>
+        <li>
+            <!-- Dropdown -->
+            <a class="dropdown-button" href="" data-activates="desdd">
+                Download
+                <i class="material-icons right">arrow_drop_down</i>
+            </a>
+        </li>
 
-            <li>
-                <div class="divider"></div>
-            </li>
+        <li>
+            <div class="divider"></div>
+        </li>
 
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-        </ul>
+        <li>
+            <a class="subheader">Subheader</a>
+        </li>
+        <li>
+            <a class="waves-effect" href="#!">Third Link With Waves</a>
+        </li>
+    </ul>
 
-        <!-- ****************************************************************************************** 
+    <!-- ****************************************************************************************** 
         NAV BAR 
       ********************************************************************************************* -->
-        <div class="navbar-fixed">
-            <nav class="z-depth-2 grey darken-4">
-                <div class="nav-wrapper content">
-                    <a href="#!" class="brand-logo center">Jason Anchia</a>
-                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    <div class="navbar-fixed">
+        <nav class="z-depth-2 white darken-4">
+            <div class="nav-wrapper content">
+                <a href="#!" class="brand-logo black-text center">Jason Anchia</a>
+                <a href="#" data-activates="slide-out" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
 
 
-                    <!-- Desktop -->
-                    <ul class="left hide-on-med-and-down">
-                        <li><a href="#" data-activates="slide-out" class="anxmenu"><i class="material-icons">menu</i></a></li>
-                    </ul>
+                <!-- Desktop -->
+                <ul class="left hide-on-med-and-down">
+                    <li>
+                        <a href="#" data-activates="slide-out" class="anxmenu black-text">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </li>
+                </ul>
 
-                </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+    </div>
 
-        <!-- ************************************************************************************** 
+    <!-- ************************************************************************************** 
         Content 
         **************************************************************************************  -->
-        <div class="body-content">
-            <!-- header image, outside the container to make it full width -->
-            <div class="parallax-container ">
-                <h2 class="grey-text thin center-align title">Project Portfolio</h2>
-                <div class="parallax"><img src="orq.jpg"></div>
+    <div class="body-content">
+        <!-- header image, outside the container to make it full width -->
+
+        <div class="" id="parallaxnav">
+            <!-- <center> -->
+            <div id="parallaxnavimg">
+                <img src="ord.jpg" align="middle" style="opacity: 0">
             </div>
-
-            <!-- Portfolio -->
-            <div class="container row">
-                <div class="col s12 m9 l10">
+            <!-- </center> -->
+        </div>
 
 
-                    <!-- Inventory -->
-                    <div id="ivtsys" class="section scrollspy">
-                        <h3> Inventory System</h3>
-                        <p class="flow-text">This is an inventory system developed for an academic unit at the University of Costa Rica. I worked
-                            on the front end, using React JS with Redux, HTML5, CSS3 and Bootstrap 3.
-                        </p>
-                        <p class="flow-text">
-                            Use the red buttons&mdash;or swipe&mdash;to see the full gallery! You can click the images to zoom them.
-                        </p>
-                        <!-- Images Carousel -->
-                        <div class="carousel carousel-slider" data-indicators="true">
-                            <a class="carousel-item" href="#one!" ~~><img src="Projects/InvMetics/mts1.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#two!" ~~><img src="Projects/InvMetics/mts2.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#three! "><img src="Projects/InvMetics/mts3.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#four!" ~><img src="Projects/InvMetics/mts4.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#five!" ~><img src="Projects/InvMetics/mts5.png" class="  responsive-img" ></a>
-                        </div>
+        <div class="parallax-container ">
+            <h2 class="grey-text thin center-align title">Project Portfolio</h2>
+            <div class="parallax">
+                <img src="orq.jpg">
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="container row">
+            <div class="col s12 m9 l10">
+
+
+                <!-- Inventory -->
+                <div id="ivtsys" class="section scrollspy">
+                    <h3> Inventory System</h3>
+                    <p class="flow-text">This is an inventory system developed for an academic unit at the University of Costa Rica. I worked
+                        on the front end, using React JS with Redux, HTML5, CSS3 and Bootstrap 3.
+                    </p>
+                    <p class="flow-text">
+                        Use the red buttons&mdash;or swipe&mdash;to see the full gallery! You can click the images to zoom them.
+                    </p>
+                    <!-- Images Carousel -->
+                    <div class="carousel carousel-slider" data-indicators="true">
+                        <a class="carousel-item" href="#one!" ~~>
+                            <img src="Projects/InvMetics/mts1.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#two!" ~~>
+                            <img src="Projects/InvMetics/mts2.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#three! ">
+                            <img src="Projects/InvMetics/mts3.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#four!" ~>
+                            <img src="Projects/InvMetics/mts4.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#five!" ~>
+                            <img src="Projects/InvMetics/mts5.png" class="  responsive-img">
+                        </a>
                     </div>
-                    <!-- ********************************** -->
-                    <!-- Cual es -->
-                    <div id="CUALES" class="section scrollspy">
-                        <h3> Cuál es?</h3>
-                        In development
-                        <p class="flow-text">
-                            'Cuál es?' is a personal project. This application shows events that will take place today, as well as upcoming events. The
-                            list of places this application fetches events from was handpicked by me.
-                        </p>
-                        <p class="flow-text">
-                            The technologies used in this project are the Facebook Graph API, HTML5, JavaScript, Google's Material Design and CSS3.
-                        </p>
-                        <p>
-                            You can try the beta version of this project &mdash; while it's still in development &mdash; at
-                            <a href="http://conscious-waves.surge.sh" target="_blank">conscious-waves.surge.sh</a>
-                        </p>
-                        <!-- Images Carousel -->
-                        <div class="carousel carousel-slider" data-indicators="true">
-                            <a class="carousel-item" href="#one!" ~~><img src="Projects/cuales/cuales1.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#two!" ~~><img src="Projects/cuales/cuales2.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#three! "><img src="Projects/cuales/cuales3.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#four!" ~><img src="Projects/cuales/cuales4.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#five!" ~><img src="Projects/cuales/cuales5.png" class="  responsive-img" ></a>
-                        </div>
-                    </div>
-
-                    <!-- dipalicori -->
-                    <div id="dipalicori" class="section scrollspy">
-                        <h3> Dipalicori</h3>
-                        <p class="flow-text">
-                            lorem ipsum
-                        </p>
-                        <p class="flow-text">
-                            lorem ipsum
-                        </p>
-                        <p>
-                            lorem ipsum
-                        </p>
-                        <!-- Images Carousel -->
-                        <div class="carousel carousel-slider" data-indicators="true">
-                            <a class="carousel-item" href="#one!" ~~><img src="Projects/cuales/cuales1.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#two!" ~~><img src="Projects/cuales/cuales2.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#three! "><img src="Projects/cuales/cuales3.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#four!" ~><img src="Projects/cuales/cuales4.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#five!" ~><img src="Projects/cuales/cuales5.png" class="  responsive-img" ></a>
-                        </div>
-                    </div>
-
-                    <!-- adrgame -->
-                    <div id="adrgame" class="section scrollspy">
-                        <h3> adrgame malecu </h3>
-                        <p class="flow-text">
-                            lorem ipsum
-                        </p>
-                        <p class="flow-text">
-                            lorem ipsum
-                        </p>
-                        <p>
-                            lorem ipsum
-                        </p>
-                        <!-- Images Carousel -->
-                        <div class="carousel carousel-slider" data-indicators="true">
-                            <a class="carousel-item" href="#one!" ~~><img src="Projects/cuales/cuales1.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#two!" ~~><img src="Projects/cuales/cuales2.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#three! "><img src="Projects/cuales/cuales3.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#four!" ~><img src="Projects/cuales/cuales4.png" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#five!" ~><img src="Projects/cuales/cuales5.png" class="  responsive-img" ></a>
-                        </div>
-                    </div>
-
-                    <!-- adrgame -->
-                    <div id="Mozarch" class="section scrollspy">
-                        <h3> Mozarch </h3>
-                        <a href="https://jasonanx.github.io/Mozarch/ " target="_blank">View on GitHub</a>
-                        <p class="flow-text">
-                            Mozarch was a Mozilla Firefox theme inspired by the Arch Linux color scheme. Since the recent update of firefox it is no
-                            loger compatible.
-                        </p>
-                        <p class="flow-text">
-                            A Mozarch II theme might be released in the future.
-                        </p>
-                        <!-- Images Carousel -->
-                        <div class="carousel carousel-slider" data-indicators="true">
-                            <a class="carousel-item" href="#one!" ~~><img src="Projects/Mozarch/mz1.jpg" class="  responsive-img" ></a>
-                            <a class="carousel-item" href="#two!" ~~><img src="Projects/Mozarch/mz2.jpg" class="  responsive-img" ></a>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="flow-text text-lighten-3  "><br> 'Twas brillig, and the slithy toves<br> Did gyre and gimble in the wabe;<br> All mimsy were the
-                        borogoves,
-                        <br> And the mome raths outgrabe.<br>
-                        <br> "Beware the Jabberwock, my son!<br> The jaws that bite, the claws that catch!<br> Beware the
-                        Jubjub bird, and shun<br> The frumious Bandersnatch!"<br>
-                        <br> He took his vorpal sword in hand:<br> Long time the manxome foe he sought &ndash; <br> So rested
-                        he by the Tumtum tree,<br> And stood awhile in thought.<br>
-                        <br> And as in uffish thought he stood,<br> The Jabberwock, with eyes of flame,<br> Came whiffling
-                        through the tulgey wood,<br> And burbled as it came!<br>
-                        <br> One, two! One, two! and through and through<br> The vorpal blade went snicker-snack!<br> He
-                        left it dead, and with its head<br> He went galumphing back.<br>
-                        <br> "And hast thou slain the Jabberwock?<br> Come to my arms, my beamish boy!<br> O frabjous day!
-                        Callooh! Callay!"
-                        <br> He chortled in his joy.<br>
-                        <br> 'Twas brillig, and the slithy toves<br> Did gyre and gimble in the wabe;<br> All mimsy were
-                        the borogoves,
-                        <br> And the mome raths outgrabe.<br>
+                </div>
+                <!-- ********************************** -->
+                <!-- Cual es -->
+                <div id="CUALES" class="section scrollspy">
+                    <h3> Cuál es?</h3>
+                    In development
+                    <p class="flow-text">
+                        'Cuál es?' is a personal project. This application shows events that will take place today, as well as upcoming events. The
+                        list of places this application fetches events from was handpicked by me.
+                    </p>
+                    <p class="flow-text">
+                        The technologies used in this project are the Facebook Graph API, HTML5, JavaScript, Google's Material Design and CSS3.
+                    </p>
+                    <p>
+                        You can try the beta version of this project &mdash; while it's still in development &mdash; at
+                        <a href="http://conscious-waves.surge.sh" target="_blank">conscious-waves.surge.sh</a>
+                    </p>
+                    <!-- Images Carousel -->
+                    <div class="carousel carousel-slider" data-indicators="true">
+                        <a class="carousel-item" href="#one!" ~~>
+                            <img src="Projects/cuales/cuales1.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#two!" ~~>
+                            <img src="Projects/cuales/cuales2.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#three! ">
+                            <img src="Projects/cuales/cuales3.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#four!" ~>
+                            <img src="Projects/cuales/cuales4.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#five!" ~>
+                            <img src="Projects/cuales/cuales5.png" class="  responsive-img">
+                        </a>
                     </div>
                 </div>
 
+                <!-- dipalicori -->
+                <div id="dipalicori" class="section scrollspy">
+                    <h3> Dipalicori</h3>
+                    <p class="flow-text">
+                        lorem ipsum
+                    </p>
+                    <p class="flow-text">
+                        lorem ipsum
+                    </p>
+                    <p>
+                        lorem ipsum
+                    </p>
+                    <!-- Images Carousel -->
+                    <div class="carousel carousel-slider" data-indicators="true">
+                        <a class="carousel-item" href="#one!" ~~>
+                            <img src="Projects/cuales/cuales1.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#two!" ~~>
+                            <img src="Projects/cuales/cuales2.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#three! ">
+                            <img src="Projects/cuales/cuales3.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#four!" ~>
+                            <img src="Projects/cuales/cuales4.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#five!" ~>
+                            <img src="Projects/cuales/cuales5.png" class="  responsive-img">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- adrgame -->
+                <div id="adrgame" class="section scrollspy">
+                    <h3> adrgame malecu </h3>
+                    <p class="flow-text">
+                        lorem ipsum
+                    </p>
+                    <p class="flow-text">
+                        lorem ipsum
+                    </p>
+                    <p>
+                        lorem ipsum
+                    </p>
+                    <!-- Images Carousel -->
+                    <div class="carousel carousel-slider" data-indicators="true">
+                        <a class="carousel-item" href="#one!" ~~>
+                            <img src="Projects/cuales/cuales1.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#two!" ~~>
+                            <img src="Projects/cuales/cuales2.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#three! ">
+                            <img src="Projects/cuales/cuales3.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#four!" ~>
+                            <img src="Projects/cuales/cuales4.png" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#five!" ~>
+                            <img src="Projects/cuales/cuales5.png" class="  responsive-img">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- adrgame -->
+                <div id="Mozarch" class="section scrollspy">
+                    <h3> Mozarch </h3>
+                    <a href="https://jasonanx.github.io/Mozarch/ " target="_blank">View on GitHub</a>
+                    <p class="flow-text">
+                        Mozarch was a Mozilla Firefox theme inspired by the Arch Linux color scheme. Since the recent update of firefox it is no
+                        loger compatible.
+                    </p>
+                    <p class="flow-text">
+                        A Mozarch II theme might be released in the future.
+                    </p>
+                    <!-- Images Carousel -->
+                    <div class="carousel carousel-slider" data-indicators="true">
+                        <a class="carousel-item" href="#one!" ~~>
+                            <img src="Projects/Mozarch/mz1.jpg" class="  responsive-img">
+                        </a>
+                        <a class="carousel-item" href="#two!" ~~>
+                            <img src="Projects/Mozarch/mz2.jpg" class="  responsive-img">
+                        </a>
+                    </div>
+                </div>
+
+
                 <div class="col hide-on-small-only m3 l2">
-                    <br><br><br><br><br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <div class="toc-wrapper pin-top">
                         <ul class="section table-of-contents">
-                            <li><a href="#ivtsys">Inventory</a></li>
-                            <li><a href="#CUALES">Cuál es?</a></li>
-                            <li><a href="#dipalicori">Dipalicori</a></li>
-                            <li><a href="#adrgame">Android Game</a></li>
-                            <li><a href="#Mozarch">Mozarch</a></li>
+                            <li>
+                                <a href="#ivtsys">Inventory</a>
+                            </li>
+                            <li>
+                                <a href="#CUALES">Cuál es?</a>
+                            </li>
+                            <li>
+                                <a href="#dipalicori">Dipalicori</a>
+                            </li>
+                            <li>
+                                <a href="#adrgame">Android Game</a>
+                            </li>
+                            <li>
+                                <a href="#Mozarch">Mozarch</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -236,6 +318,10 @@
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script type="text/javascript">
+            $(window).on('scroll', function () {
+                console.log('fdafdaf')
+                $('#parallaxnav').scrollTop($(this).scrollTop());
+            });
             $(document).ready(function () {
                 $(".anxmenu").sideNav();
                 $(".button-collapse").sideNav();
@@ -252,6 +338,8 @@
                     // bottom: 0,
                     offset: 100
                 });
+
+
 
                 // var content = $('.body-content'),
                 //     header = $('body > div.navbar-fixed ');
@@ -270,6 +358,6 @@
                 // })
             })
         </script>
-    </body>
+</body>
 
 </html>
