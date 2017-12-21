@@ -97,10 +97,14 @@ p {
 
 .navbar-fixed nav {
     /* opacity: .8; */
-    background-color: rgba(20,20,20,0.1) !important;
     width: calc(100% - 300px);
     animation-name: example;
     animation-duration: 2s;
+}
+
+.translucid {
+    background-color: rgba(20, 20, 20, 0.1) !important;
+    transition: 1.5s;
 }
 
 
