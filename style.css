@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');
-h1, h2, h3, h4, h4, h6 {
-    font-family: 'Raleway', sans-serif;
-}
+/*@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');*/
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {}
 
 .brand-logo {
-    font-family: 'Raleway', sans-serif;
-    text-shadow: 4px 3px 13px rgba(60, 60, 60, 1);
+    /*font-family: 'Raleway', sans-serif;*/
+    /* text-shadow: 4px 3px 13px rgba(60, 60, 60, 1); */
+    font-weight: 300;
 }
 
 .title {
@@ -56,12 +61,46 @@ p {
 }
 
 .parallax-container {
-    margin-top: -64px;
-    height: 564px;
+    /* margin-top: -64px;
+    height: 564px; */
 }
 
-nav {
-    opacity: .85;
+#parallaxnav {
+    height: 64px;
+    z-index: 33;
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
+    margin-top: -64px;
+}
+
+#parallaxnavimg {
+    background: url("Projects/900px.jpg");
+    /*margin-left: calc(0px - (1366px - 100vw)/2)*/
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: 100vw auto;
+}
+
+#parallaxnavimgimg {
+    width: 100%;
+}
+
+@keyframes example {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar-fixed nav {
+    /* opacity: .8; */
+    background-color: rgba(20,20,20,0.1) !important;
+    width: calc(100% - 300px);
+    animation-name: example;
+    animation-duration: 2s;
 }
 
 
@@ -103,3 +142,52 @@ body > div.navbar-fixed > nav {
 
 
 /* Header ***************************************************************** */
+
+#app {
+    margin-left: 300px;
+}
+
+#canvasHolder {
+    /* opacity: .8; */
+    /* animation-name: example;
+    animation-duration: 2s; */
+}
+
+#canvasHolder {
+    margin-left: -300px;
+}
+
+.anxmenu {
+    display: none;
+}
+
+.side-nav .userView .circle {
+    height: 154px;
+    width: 164px;
+    margin: auto;
+}
+
+.side-nav .userView>a {
+    text-align: center
+}
+
+.background>img {
+    width: 150%;
+    margin-left: -75px;
+    margin-top: -15px;
+}
+
+@media only screen and (max-width: 992px) {
+    .anxmenu {
+        display: inherit;
+    }
+    #app {
+        margin-left: 0;
+    }
+    .navbar-fixed nav {
+        width: 100%;
+    }
+    #canvasHolder {
+        margin-left: 0;
+    }
+}
