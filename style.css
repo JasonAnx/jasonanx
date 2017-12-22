@@ -103,7 +103,7 @@ p {
 }
 
 .translucid {
-    background-color: rgba(20, 20, 20, 0.1) !important;
+    background-color: rgba(20, 20, 20, 0.05) !important;
     transition: 1.5s;
 }
 
