@@ -5,7 +5,9 @@ h2,
 h3,
 h4,
 h4,
-h6 {}
+h6 {
+    text-align: center;
+}
 
 .brand-logo {
     /*font-family: 'Raleway', sans-serif;*/
@@ -103,7 +105,8 @@ p {
 }
 
 .translucid {
-    background-color: rgba(20, 20, 20, 0.05) !important;
+    /* background-color: rgba(20, 20, 20, 0.05) !important; */
+    background-color: transparent !important;
     transition: 1.5s;
 }
 
@@ -172,13 +175,28 @@ body > div.navbar-fixed > nav {
 }
 
 .side-nav .userView>a {
-    text-align: center
+    text-align: center;
+    color: white;
 }
 
 .background>img {
     width: 150%;
     margin-left: -75px;
-    margin-top: -15px;
+    /* margin-top: -15px; */
+}
+
+.parallax-container .parallax {
+    z-index: 0;
+}
+
+.parallax-container .parallax img {
+    display: block;
+}
+
+.parallax-container {
+    width: calc(100vw - 300px);
+    margin-left: -22%;
+    height: 300px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -193,5 +211,9 @@ body > div.navbar-fixed > nav {
     }
     #canvasHolder {
         margin-left: 0;
+    }
+    .parallax-container {
+        width: calc(100vw);
+        margin-left: -11%;
     }
 }
