@@ -200,21 +200,35 @@ body > div.navbar-fixed > nav {
 .parallax-container {
     width: calc(100vw - 300px);
     margin-left: -22%;
-    height: 300px;
+    height: 250px;
 }
 
 div.gallery-img {
-    margin: 5px;
-    border: 1px solid #ccc;
+    margin: 2px;
+    /* border: 1px solid #ccc; */
     /* float: left; */
-    display: inline-block;
-    max-width: 280px;
+    display: table-cell;
+    max-width: 250px;
     /* max-height: 270px;  */
 }
 
-div.gallery-img > .material-placeholder {
+div.gallery-img>.material-placeholder {
     /* width: 280px;*/
     /* height: 170px;  */
+}
+
+.flexAlign {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flexAlign i {
+    width: 2rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    /* text-align: center; */
+    margin-right: .7rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -232,7 +246,7 @@ div.gallery-img > .material-placeholder {
     }
     .parallax-container {
         width: calc(100vw);
-        margin-left: -11%;
+        margin-left: -5vw;
         height: 250px;
     }
 }
