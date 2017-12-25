@@ -1,0 +1,1 @@
+mogrify -strip -interlace Plane -gaussian-blur 0.05 -quality 5% *.jpg 
