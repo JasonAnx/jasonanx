@@ -11,14 +11,13 @@ $(document).ready(function () {
     // ];
     // Materialize.scrollFire(options);
 
-    html2canvas(document.querySelector("#app")).then(canvas => {
+    html2canvas(document.querySelector("#app"), {scale:1}).then(canvas => {
         var bgimgS = document.getElementById('origimg');
 
-        ctx = canvas.getContext("2d");
-
-        bgimgS.src = canvas.toDataURL("image/jpeg", 0.1)
+        bgimgS.src = canvas.toDataURL("image/jpeg", 0.3)
         var cvs = document.getElementById('canvas');
-        blurNAV(bgimgS, cvs)
+        // document.body.appendChild(canvas)
+        blurNAV(bgimgS, cvs, 65)
     });
 
     windowWdth = window.innerWidth
@@ -61,11 +60,11 @@ window.onresize = function (event) {
     $('#canvasHolder').height($('.navbar-fixed').height())
 };
 
-function blurNAV(img, canvas) {
+function blurNAV(img, canvas, amount) {
     // http://www.quasimondo.com/StackBlurForCanvas/StackBlurDemo.html
 
     window.requestAnimationFrame(function () {
-        stackBlurImage(img, canvas, 75);
+        stackBlurImage(img, canvas, amount);
         // boxBlurImage(img, cvs, 100, 3)
         // $("#canvasHolder").fadeIn(3000)
         $('.navbar-fixed nav').addClass('translucid');
