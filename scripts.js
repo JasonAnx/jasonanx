@@ -11,13 +11,15 @@ $(document).ready(function () {
     // ];
     // Materialize.scrollFire(options);
 
-    html2canvas(document.querySelector("#app"), {scale:1}).then(canvas => {
+    html2canvas(document.querySelector("#app"), { scale: 1 }).then(canvas => {
         var bgimgS = document.getElementById('origimg');
 
-        bgimgS.src = canvas.toDataURL("image/jpeg", 0.3)
+        bgimgS.src = canvas.toDataURL("image/jpeg", 0.25)
         var cvs = document.getElementById('canvas');
         // document.body.appendChild(canvas)
-        blurNAV(bgimgS, cvs, 65)
+        $.when(blurNAV(bgimgS, cvs, 45, 0)).then(
+        );
+
     });
 
     windowWdth = window.innerWidth
@@ -35,7 +37,6 @@ $(document).ready(function () {
             // console.log(root.innerWidth)
             // $('.parallax').parallax();
         }
-
         // ctntMgn = app.clientWidth - ctnt.clientWidth
         // $("#content>header>.parallax-container").css('margin-left',-ctntMgn/2+'px');
         // $("#content>header>.parallax-container").css('margin-right',-ctntMgn/2+'px');
